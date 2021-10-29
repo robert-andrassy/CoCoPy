@@ -7,7 +7,7 @@ Baraffe, S. W. Campbell, T. Constantino, P. V. F. Edelmann, T. Goffrey , T.
 Guillet, F. Herwig, R. Hirschi, L. Horst, G. Leidi, C. Meakin, J. Pratt, F.
 Rizzuti, F. K. Röpke, and P. Woodward 2021, **Dynamics in a stellar convective layer and at its boundary: Comparison of five 3D hydrodynamics codes**, submitted to Astronomy & Astrophysics in October 2021
 
-The Jupyter notebooks can be run on the [CoCo Hub](https://www.ppmstar.org/coco/), which also contains the data files necessary for the analysis. Alternatively, you can clone this repository on your machine and download the 1D and 2D data from Zenodo (add link). The original 3D data cubes are only available on the [CoCo Hub](https://www.ppmstar.org/coco/) because of the large data volume.
+The Jupyter notebooks can be run on the [CoCo Hub](https://www.ppmstar.org/coco/), which also contains the data files necessary for the analysis. Alternatively, you can clone this repository on your machine and download the 1D and 2D data from [Zenodo](https://doi.org/10.5281/zenodo.5607675). The original 3D data cubes are only available on the [CoCo Hub](https://www.ppmstar.org/coco/) because of the large data volume.
 
 ## What is included
 
@@ -16,7 +16,7 @@ The Jupyter notebooks can be run on the [CoCo Hub](https://www.ppmstar.org/coco/
     * `1D-profiles.ipynb`: Jupyter notebook that analyses and plots the 1D profiles. The notebook also plots the MESA stellar-structure model contained in the file `mesa_model_29350.npy`, which the simulation setup is based on.
     * `2D-slices.ipynb`: Jupyter notebook that compares 2D slices from different simulations at a given point in time.
     * `spectra.ipynb`: Jupyter notebook that loads and plots kinetic-energy spectra.
-    * `animations.ipynb`: Jupyter notebook that creates individual frames of the animations available on Zenodo (add link).
+    * `animations.ipynb`: Jupyter notebook that creates individual frames of the animations available on [Zenodo](https://doi.org/10.5281/zenodo.5607675).
     * `FK-in-two-stream-model.ipynb`: Jupyter notebook that creates Fig. B.1 shown in the paper's Appendix B.
     * `setup-two-layers.ipynb`: Jupyter notebook that generates the 1D initial stratification as defined in the paper.
     * `plotting_settings.py`: Python script that that defines the most important plotting-related parameters and variables.
