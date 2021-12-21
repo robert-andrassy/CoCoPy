@@ -5,7 +5,7 @@ This repository contains all Jupyter notebooks and scripts needed to reproduce o
 R. Andrassy, J. Higl, H. Mao, M. Mocák, D. G. Vlaykov, W. D. Arnett, I.
 Baraffe, S. W. Campbell, T. Constantino, P. V. F. Edelmann, T. Goffrey , T.
 Guillet, F. Herwig, R. Hirschi, L. Horst, G. Leidi, C. Meakin, J. Pratt, F.
-Rizzuti, F. K. Röpke, and P. Woodward 2021, **Dynamics in a stellar convective layer and at its boundary: Comparison of five 3D hydrodynamics codes**, submitted to Astronomy & Astrophysics in October 2021
+Rizzuti, F. K. Röpke, and P. Woodward 2021, **Dynamics in a stellar convective layer and at its boundary: Comparison of five 3D hydrodynamics codes**, submitted to Astronomy & Astrophysics in October 2021, preprint available at [https://arxiv.org/abs/2111.01165](https://arxiv.org/abs/2111.01165)
 
 The Jupyter notebooks can be run on the [CoCo Hub](https://www.ppmstar.org/coco/), which also contains the data files necessary for the analysis. Alternatively, you can clone this repository on your machine and download the 1D and 2D data from [Zenodo](https://doi.org/10.5281/zenodo.5796842). The original 3D data cubes are only available on the [CoCo Hub](https://www.ppmstar.org/coco/) because of the large data volume.
 
