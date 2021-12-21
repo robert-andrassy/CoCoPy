@@ -176,8 +176,10 @@ class Analysis(object):
         vel = self.vel[vaxis]
         mass = self.mass
         mean_vel = self.get_mean(vel, mass, vaxis)
+        reshape_vec = get_reshape_vec(vel.shape, vaxis)
+        tmp = np.reshape(mean_vel, reshape_vec)
         haxes = get_haxes(len(vel.shape), vaxis)
-        ffd = np.mean(vel - mean_vel < 0., axis=haxes)
+        ffd = np.mean(vel - tmp < 0., axis=haxes)
         return ffd
 
     def get_mean(self, quantity, weight, vaxis):
@@ -227,7 +229,7 @@ class Analysis(object):
        y = np.mean(self.coords[vaxis], axis=haxes)
        ncols = 1*sum(1 for val in vars.values() if val['stats'] == 'mean') + \
                4*sum(1 for val in vars.values() if val['stats'] == 'full')
-       ncols+=4 # FK, FH, FFD, and DISS are computed separately below
+       ncols+=3 # FK, FH and FFD are computed separately below
        col_names = []
        data_table = np.zeros((nbins, ncols))
 
@@ -280,12 +282,6 @@ class Analysis(object):
 
        col_names.append('FFD')
        data_table[:,j] = self.filling_factor_downflow(vaxis)
-       j+=1
-
-       # Dissipation rate to be implemented.
-       diss = np.zeros(nbins)
-       col_names.append('DISS')
-       data_table[:,j] = diss
        j+=1
 
        try:
