@@ -52,3 +52,4 @@ rcParams['lines.linewidth'] = 1.
 rc('text', usetex=True)
 rc('text.latex', preamble=r'\usepackage{txfonts}')
 rcParams['legend.fontsize'] = 0.93*size
+rcParams["legend.labelspacing"] = 0.43
